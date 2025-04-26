@@ -34,6 +34,17 @@ En este paso nextjs hara una serie de preguntas para la configuracion correcta, 
 ```
     docker compose up
 ```
+Lo anterior ademas levanta el servidor de desarrollo, con npn run dev
+
+Para visualizar la "Next.js Default Development Page" que es la pagina por defecto que no dan al iniciar el servidor por primera vez.
+Para ir a esa pagina colocamos en la url lo siguiente:
+```
+    localhost:3000     o  http://localhost.3000
+```
+
+ ![alt text](image-1.png)
+
+
 
 #### Nota: Cuando se levante el contenedor se debe de esperar de 10 a 15 segundos la primera vez, por los siguientes motivos: 
 
