@@ -1,0 +1,17 @@
+# version: '3.8'
+
+services:
+  nextjs-app:
+    container_name: nextjs-app
+    build:
+      context: .           # ✅ Usamos la raíz donde está el Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"         # 🌐 Puerto de Next.js
+    volumes:
+      - ./frontend:/app              # 🗂️ Montamos todo el proyecto
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
+    stdin_open: true        # ✅ Para terminal interactiva
+    tty: true               # ✅ Para terminal interactiva
