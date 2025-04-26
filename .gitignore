@@ -1,0 +1,5 @@
+# Ignorando la carpeta de frontend 
+/frontend/
+
+# 
+node_modules/
